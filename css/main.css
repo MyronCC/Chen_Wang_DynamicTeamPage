@@ -7,7 +7,7 @@
 
 #container
 {
-	max-width: 1440px;
+	max-width: 960px;
 	margin: 0 auto;
 }
 
@@ -23,6 +23,23 @@ h2
 	font-size: 36px;
 	margin-top: 30px;
 }
+
+/*@keyframes hue {
+    from {
+        filter: hue-rotate(0);
+    }
+
+    to {
+        filter: hue-rotate(360deg);
+    }
+}
+
+#rainbow-text {
+    color: transparent;
+    animation: hue 2s linear infinite;
+    background-image: linear-gradient(to right bottom, rgb(255,0,0), rgb(255,128,0), rgb(255,255,0), rgb(0,255,0), rgb(0,255,128), rgb(0,255,255), rgb(0,128,255), rgb(0,0,255), rgb(128,0,255), rgb(255,0,255), rgb(255,0,128));
+    -webkit-background-clip: text;
+}*/
 
 #mainNav
 {
@@ -42,6 +59,7 @@ h2
 	text-decoration: none;
 	font-family: 'Arial', normal;
 	color: #3c3c3c;
+	transition: all .2s ease;
 }
 
 #mainNav ul li
@@ -58,29 +76,136 @@ h2
 	/*opacity: 0;	*/
 }
 
+#mainNav ul li a:hover
+{
+	padding-bottom: 1px;
+	border-bottom: 3px solid black;
+}
+
 #body
 {
 	display: flex;
 	flex-direction: row;
+	max-width: 900px;
+	margin: 0 auto;
+	padding-bottom: 30px;
+	border-bottom: solid 1px #8c8c8c;
 }
 
-#chen
+.member
 {
-	max-width: 720px;
-	background-color: pink;
+	max-width: 450px;
+	/*background-color: pink;*/
 	flex: 1;
-	height: 400px;
+	text-align: center;
 }
 
-#wang
+.member img
 {
-	max-width: 720px;
-	background-color: lightblue;
-	flex: 1;
-	height: 400px;
+	width: 50%;
+	border-radius: 10px;
+	transition: all .5s ease;
+}
+
+.member img:hover
+{
+	opacity: .7;
 }
 
 #project h2
 {
 	font-size: 24px;
+	line-height: 500px;
+}
+
+#project
+{
+	padding-top: 30px;
+	flex-direction: row;
+	display: flex;
+	max-width: 900px;
+	margin: 0 auto;
+	padding-bottom: 30px;
+	border-bottom: solid 1px #8c8c8c;
+}
+
+#left
+{
+	width: 300px;
+	text-align: center;
+}
+
+#right
+{
+	width: 600px;
+	text-align: center;
+}
+
+#right img
+{
+	width: 80%;
+}
+
+footer
+{
+	margin-top: 30px;
+	max-width: 960px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+footer p
+{
+	font-family: 'Arial';
+	font
+}
+
+
+
+.hide 
+{
+	visibility: hidden;
+}
+
+.overlay 
+{
+	z-index: 1000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+ 
+.overlayBox 
+{
+	width: 225px;
+	height: 300px;
+	margin: 164px auto;
+	border-radius: 10px;
+	box-shadow: 0 20px 60px rgba(0,0,0,.15)inset;
+	display: flex;
+	flex-direction: column;
+}
+
+
+.overlayBody 
+{
+	padding-top: 90px;
+	height: 300px;
+}
+
+.overlayBody p 
+{
+	font-size: 18px;
+	font-family: 'Arial';
+	text-align: center;
+	line-height: 50px;
+
+}
+
+button
+{
+	height: 50px;
+	box-shadow: 0 20px 60px rgba(0,0,0,.15);
+	border-radius: 10px;
 }
