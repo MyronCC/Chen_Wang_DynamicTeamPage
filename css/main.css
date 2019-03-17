@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+.hidden
+{
+	display: none;
+}
+
+#container
+{
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+header
+{
+
+}
+
+h2
+{
+	text-align: center;
+	font-family: 'Lilita One', cursive;
+	font-size: 36px;
+	margin-top: 30px;
+}
+
+#mainNav
+{
+	margin: 0 auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+#mainNav ul
+{
+	display: flex;
+	flex-direction: row;
+}
+
+#mainNav ul li a
+{
+	text-decoration: none;
+	font-family: 'Arial', normal;
+	color: #3c3c3c;
+}
+
+#mainNav ul li
+{
+	display: block;
+	width: 100px;
+	margin: 0 auto;
+	text-align: center;
+	
+	padding: 10px 25px 10px 25px;
+	font-size: 18px;
+	border-radius: 10px;
+	
+	/*opacity: 0;	*/
+}
+
+#body
+{
+	display: flex;
+	flex-direction: row;
+}
+
+#chen
+{
+	max-width: 720px;
+	background-color: pink;
+	flex: 1;
+	height: 400px;
+}
+
+#wang
+{
+	max-width: 720px;
+	background-color: lightblue;
+	flex: 1;
+	height: 400px;
+}
+
+#project h2
+{
+	font-size: 24px;
+}
