@@ -2,7 +2,7 @@
  	console.log('fire');
 
 	let name = ["Chen Boling", "Wang Jianghaonan"];
-		job = ["Developer", "Designer"];
+		job = ["Web Developer", "Web Designer"];
 
 		chen = document.getElementsByClassName('developer');
 		wang = document.getElementsByClassName('designer');
